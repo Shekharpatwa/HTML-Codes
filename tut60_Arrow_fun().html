@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function</title>
+</head>
+<body>
+    <div class="conatin">
+      <h1> Performing Arrow function. Press "f12" or inspect it </h1>
+    </div>
+
+    <script>
+        //Arrow Function
+        let greet = () =>{
+            console.log("Good morning");
+        }
+        greet();
+
+        let greet1 = () => console.log("Good afternoon");
+        greet1();
+
+        function greet2(){
+            console.log("Good evening");
+        }
+        greet2();
+
+        let sum1 = (a,b) =>{
+            return a+b;
+        }
+
+        let sum2 = (a,b)=> a+b;   //Directly returning the value 
+        let half= a =>a/2;   //Only when their is one parameter like "a" and "one number".
+
+        setTimeout(() => {
+            console.log("We are inside setTimeOut");
+        }, 3000);   //Above statement will be displayed after 3sec 
+
+        let obj1 ={
+            greeting:"Welcome",
+            names:['Raj','Sonu','Raju','Manju'],
+            speak(){
+                this.names.forEach((student)=>{   
+                    console.log(this.greeting + " Hello " + student);
+                });   // "this.greeting will take the parent value 'welcome' "
+            }     //If we has ddeclared as function -> forEach(function s(student)) -> this we show the "this.greeting" value undefined
+        }
+        obj1.speak();
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS SetTimeOut and ClearTimeOut</title>
+</head>
+<body>
+    <div class="contain">
+        Time now is  <span id="time"></span>
+    </div>
+
+    <script>
+        console.log("This is SetTimeOut and ClearTimeOut interval");
+        // setTimeout --> Alllows us to run the function once after the interval of time
+    // clearTimeout --> Alllows us to run the function repeatedly after the interval of time
+
+    //can pass multiple variables in this function
+    function Greet(name, newtext){
+        console.log("Hello Web developer " + name + newtext);
+    }
+     timeOut = setTimeout(Greet ,3000, "Shekhar ", "welcome");
+     console.log(timeOut);
+
+   // clearTimeout(timeOut);    
+
+    // setTimeout(greet(), 12000); --> Wrong as it is calling the function inside setTimeout
+
+    intervalId = setInterval(Greet, 3000, "Shekhar", " Welcome again");
+    clearInterval(intervalId);
+
+    function clockdisplay(){
+        time = new Date();
+        console.log(time);
+        document.getElementById('time').innerHTML = time;
+    }
+    setInterval(clockdisplay, 1000);  //will display the time 
+    </script>
+</body>
+</html>

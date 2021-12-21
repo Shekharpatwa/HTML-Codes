@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Starting Basic</title>
+</head>
+
+<body>
+    <script>
+        //using th "let" instead of "var" so if by chance variable name is used again it can show error 
+        // "const":- the value cannot be overwrite except where it is declared
+        let str = "Shekhar is coder";
+        console.log("Original string: " + str);
+        console.log("Index of 'is' :" + str.indexOf('is')); //show from the start
+        console.log("Last index: " + str.lastIndexOf('co')); // show the last index value
+        console.log("Slice :" + str.slice(1, 9)); //show the value from 1 to 9
+
+        console.log("Substring: " + str.substring(1, 8));
+
+        console.log("Substr: " + str.substr(1, 5));
+
+        console.log("Replacing the string: " + str.replace('is', 'was a'));
+
+        console.log("String to lower case: " + str.toLowerCase());
+
+        console.log("String to upper case: " + str.toUpperCase());
+
+        console.log("String conact: " + str.concat("New string"));
+
+        let str1 = "  This is   whitespace";
+
+        console.log("String with whitespace: " + str1);
+
+        console.log("String trim the whitespace from the start only: " + str.trim());
+
+        console.log("String what at index 4: " + str.charAt(4));
+
+        console.log("String showing th code of that char: " + str.charCodeAt(4));
+
+        console.log("Direct using the array index: " + str[4]);
+
+        var string = 'thi"s';
+        var name = 'Harry';
+        var channel = 'CodeWithHarry';
+        var message = 'Harry is a good boy';
+        var temp = `${name} is a 'nice' person "and" he has a channel called ${channel}`;
+        // console.log(string + name + message);
+        // console.log(temp);
+        // var len = name.length;
+        // console.log(`Length of name is ${len}`)
+
+        // console.log("Hello \\nworld\nHarry\tand");
+        var y = new String("this");
+        console.log(y);
+
+    </script>
+</body>
+
+</html>

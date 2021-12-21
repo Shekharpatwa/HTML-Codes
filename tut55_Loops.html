@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops in Java</title>
+</head>
+
+<body>
+    <div class="contain">
+        <h1>Loops in Java. Press "f12". To see the output</h1>
+    </div>
+
+    <script>
+        let frnd = ['Raj', 'Raju', 'Sanjay', 'Rohan'];
+        // for (let index = 0; index < frnd.length; index++) {
+        //     console.log("Hello "+ frnd[index]);
+
+        // }
+
+        // Using the modern javascript
+        frnd.forEach(function f(element) {
+            console.log("Hello " + element + " using javacsript");
+        });
+
+        // Using the modern javascript again "for of loop"
+        for (element of frnd) {
+            console.log("Hello ," + element + " using javascript again");//
+        }
+        //here "f can any variable name
+
+        let emp = {
+            name: "Shekhar",
+            Salary: 40000,
+            Profession: "Web Developer"
+        }
+
+        for (key in emp) {
+            console.log(`The ${key} of employee is ${emp[key]}`);
+        }
+    </script>
+</body>
+
+</html>
